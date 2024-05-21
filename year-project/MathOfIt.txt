@@ -1,4 +1,4 @@
-Project is a family tree maker. I made my own family tree in a google drawing, and this is me figuring out how I can make the connections mathematical.
+Project is a family tree maker. I made my own family tree in a google drawing (took a long time), and this is me figuring out how I can make the connections mathematical.
 
 Basic definitions:
 +1 = Parent
@@ -15,6 +15,7 @@ Same for Down
 +4 -4 = Third cousin
 
 
+(Ath cousin, Bth removed)
 m   n   a  b
 +2 -2 = 1
 +2 -3 = 1, 1
