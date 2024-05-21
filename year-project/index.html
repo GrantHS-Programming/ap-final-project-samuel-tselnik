@@ -6,19 +6,21 @@
     </head>
     <body>
         <div style="width:100%; height:700px;" id="tree"></div>
-
         <script>
             let family = new FamilyTree(document.getElementById("tree"), {
                 nodeBinding: {
                     field_0: "name"
                 },
                 nodes: [
-                    { id: 1, pids: [2], name: "Amber McKenzie", gender: "female" },
-                        { id: 2, pids: [1], name: "Ava Field", gender: "male" },
-                        { id: 3, mid: 1, fid: 2, name: "Peter Stevens", gender: "male" }  
+                    { id: 1, mid: 3, fid: 4, name: "Samuel Tselnik", gender: "male" },
+                    { id: 2, mid: 3, fid: 4, name: "Ezra Tselnik", gender: "male" },
+                    { id: 3, pids: [4], name: "Christina Tselnik", gender: "female" },
+                    { id: 4, pids: [3], name: "Marat Tselnik", gender: "male"} 
                 ]
             });
         </script> 
          
     </body>
+
+</body>
 </html>
