@@ -24,7 +24,7 @@ function importJSONHandler(){
 });
 
 family.editUI.on('element-btn-click', function (sender, args) {
-    console.log("Hasg");
+    console.log("Test1");
     FamilyTree.fileUploadDialog(function (file) {
         let formData = new FormData();
         formData.append('file', file);
