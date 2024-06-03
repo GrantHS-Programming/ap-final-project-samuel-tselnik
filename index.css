@@ -23,6 +23,7 @@ ul.navbar {
   font-family: 'Courier New', Courier, monospace;
 }
 
+/*Formatting for current page text/link*/
 a.currentPage {
   display: inline-block;
   position: relative;
@@ -36,6 +37,7 @@ a.currentPage {
   background-color: var(--color2);
 }*/
 
+/*Formatting for page links*/
 a {
   display: inline-block;
   position: relative;
@@ -43,6 +45,7 @@ a {
   text-decoration: none;
 }
 
+/*Line animation for links*/
 a:after {
   content: '';
   position: absolute;
@@ -85,6 +88,7 @@ body {
   background-image: url("./images/drinkline.png");
   background-size: auto 100%;
 }*/
+
 /*Homepage Heading*/
 #headtext {
   background-color: var(--color1);
@@ -106,101 +110,6 @@ h1 {
 }
 
 
-/*The lunch of homepage CSS*/
-.homePage {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-}
-
-/*ids are divs, classes for individual boxes*/
-#left {
-  border-style:ridge;
-  border-color: var(--color2);
-  border-top: 0;
-  border-left: 0;
-  border-bottom: 0;
-  padding-right: 30px;
-  flex-direction: column;
-  float: left;
-  max-width: 400px;
-  justify-content: space-between;
-}
-
-#right {
-  border-style:ridge;
-  border-color: var(--color2);
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 0;
-  padding-left: 30px;
-  flex-direction: column;
-  float: right;
-  max-width: 400px;
-  justify-content: space-between;
-}
-
-.left, .right {
-  border-radius: 5px;
-  font-size: 130%;
-  padding: 8px;
-  padding-top: 0px;
-}
-
-.homeItem {
-  
-}
-
-#history {
-  align-self: center;
-  max-width: 900px;
-  font-size: 200%;
-  padding: 0px 30px 10px 30px;
-  margin-top: 0px;
-  border-radius: 5px;
-}
-
-/*Syrup buttons*/
-.collapsibleSyrup {
-  background-color: var(--color1);
-  cursor: pointer;
-  padding: 12px;
-  width: 98%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  margin-top: 5px;
-  margin-left: 4px;
-}
-
-
-/*individual boxes*/
-
-#syrups {
-
-}
-
-#measurements {
-  line-height: 40px;
-}
-
-#categories {
-  margin-top: 15%;
-}
-
-#mixing {
-
-}
-
-h2 {
-  padding-top: 5px;
-}
-
-
-/* HOME PAGE ^^^
 /* NON HOME PAGE vvv*/
 
 
@@ -224,30 +133,31 @@ h3 {
 
 
 
-
 /*Formatting of buttons*/
 .buttons {
   display: flex;
   flex-direction: column;
+  margin-inline: 45%;
 
 }
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: var(--color2);
+  background-color: var(--color1);
   color: var(--color3);
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  padding: 10%;
+  width: 70%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 100%;
   margin-top: 5px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-background-color: var(--color25);
+background-color: var(--color1);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -263,60 +173,3 @@ background-color: var(--color25);
   transition: max-height 0.2s ease-out;
   background-color: var(--color1);
 }
-
-.drinkPicture {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  margin-right: 0px;
-}
-
-
-.ingOverIns {
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 25px 15px 15px 15px;
-  padding: 5px 15px 5px 15px;
-  background-color: var(--color2);
-  max-width: 600px;
-}
-
-.ingredients {
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 5px;
-  padding: 5px 15px 15px 15px;
-  max-height: 70px;
-  background-color: var(--color25);
-  list-style-type: none;
-  list-style-position: inside; 
-  line-height: 30px;
-}
-
-.ingredients li {
-
-}
-
-.instructions {
-  border-radius: 3px;
-  margin: 5px;
-  padding: 5px 15px 5px 15px;
-  background-color:var(--color25);
-  font-size: large;
-}
-
-.drinkInfo {
-  border-radius: 3px;
-  margin-top: 25px;
-  padding: 15px 100px 5px 15px;
-  background-color: var(--color2);
-  font-size: 120%;
-  max-width: 800px;
-  margin-bottom: 15px;
-}
-
-
-

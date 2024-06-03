@@ -11,4 +11,33 @@
             <li class="navbar"> <a href="rudyBook.html">Rudiment Book</a></li>
         </ul>
     </nav>
+
+    <div class = "buttons">
+        <button type="button" class="collapsible">
+            Odessa
+        </button>
+        <div class="content">
+            <p>Open a PDF file <a href = "Odessa.pdf" target = "_blank">example</a></p>
+        </div>
+    </div>
+
+
+    <!--Makes collapsibles work-->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+        }
+    </script>
+    
 </body>
