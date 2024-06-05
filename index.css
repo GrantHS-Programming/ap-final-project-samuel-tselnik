@@ -12,14 +12,10 @@
 ul.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: var(--color1);
+  justify-content: space-around;
   list-style-type: none;  
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding: 7px 25% 7px 25%;
-  font-size: 20px;
+  margin-bottom: 50px;
+  font-size: 50px;
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -137,7 +133,8 @@ h3 {
 .buttons {
   display: flex;
   flex-direction: column;
-  margin-inline: 45%;
+  margin-inline: 20%;
+  align-items: center;
 
 }
 
@@ -146,18 +143,19 @@ h3 {
   background-color: var(--color1);
   color: var(--color3);
   cursor: pointer;
-  padding: 10%;
+  padding: 40%, 10%, 40%, 10%;
   width: 70%;
   border: none;
   text-align: center;
   outline: none;
-  font-size: 100%;
+  font-size: 200%;
   margin-top: 5px;
+  margin-inline: 40%;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-background-color: var(--color1);
+background-color: var(--color25);
 }
 
 /* Style the collapsible content. Note: hidden by default */
@@ -167,9 +165,8 @@ background-color: var(--color1);
   justify-content: left;
   align-items: stretch;
   flex-wrap: wrap;
-  padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: var(--color1);
+  background-color: green;
 }
