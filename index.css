@@ -133,9 +133,7 @@ h3 {
 .buttons {
   display: flex;
   flex-direction: column;
-  margin-inline: 20%;
   align-items: center;
-
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -143,14 +141,11 @@ h3 {
   background-color: var(--color1);
   color: var(--color3);
   cursor: pointer;
-  padding: 40%, 10%, 40%, 10%;
-  width: 70%;
   border: none;
   text-align: center;
   outline: none;
   font-size: 200%;
   margin-top: 5px;
-  margin-inline: 40%;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -167,6 +162,28 @@ background-color: var(--color25);
   flex-wrap: wrap;
   max-height: 0;
   overflow: hidden;
+  padding: 5px;
+  border-radius: 1%;
   transition: max-height 0.2s ease-out;
   background-color: green;
+  width: 70%;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+}
+
+.title {
+  background-color: powderblue;
+}
+
+.date {
+  background-color: pink;
+}
+
+.pdf {
+  background-color: red;
 }

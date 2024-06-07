@@ -12,3 +12,5 @@ Name: Samuel Tselnik
 6/3: Collapsible button formatting & PDF linking
 
 6/5: New example, youtube embeds, formatting fixes
+
+6/7: Why are css boxes and margins and paddings and borders so confusing
